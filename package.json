@@ -1,14 +1,15 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Command line application that develops README markdown file",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Felicia Wright",
+  "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.0",
     "inquirer": "^6.3.1"
   }
 }
