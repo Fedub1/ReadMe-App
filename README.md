@@ -4,9 +4,9 @@
   # Title of Application : Good ReadMe Generator
  
  
-  # Description : Generates markdown file for your projects
+  ## Description : 
 
-  # Table of Contents : 
+  ## Table of Contents : 
   *[Installation](#installation)
   *[Usage](#usage)
   *[Contributors](#contributors)
@@ -15,17 +15,17 @@
   *[License](#license)
   
 
-  # Installation : npm init node index
+  ## Installation : 
 
-  # Usage : see instructions
+  ## Usage : 
 
-  # Contributors : Felicia Wright
+  ## Contributors : 
 
-  # Tests : 
+  ## Tests : 
 
-  # License : MIT
+  ## License : 
   
-  # Questions?
-   Contact me with any questions: $response.username}.
+  ## Questions?
+  
 
     
