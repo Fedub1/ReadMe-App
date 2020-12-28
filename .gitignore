@@ -1,6 +1,4 @@
 node_modules
-usefulllinks.txt
 package-lock.json
-package.json
-vs.code
+.DS_Store/
 

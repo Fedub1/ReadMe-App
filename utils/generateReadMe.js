@@ -1,102 +1,36 @@
 // function to generate markdown for README
-function generateReadMe(userResponses, userInfo) {
+function generateReadMe(response) {
+  return`
   
-  let draftToC = ` ## Table of Contents`;
 
-  if (userResponses.installation !== '') {draftToC += `
-  * [Installation](#installation)` };
+  # Title of Application : ${response.title}
+ 
+ 
+  # Description : ${response.description}
+
+  # Table of Contents : 
+  *[Installation](#installation)
+  *[Usage](#usage)
+  *[Contributors](#contributors)
+  *[Tests](#tests)
+  *[Questions](#questions)
+  *[License](#license)
   
-  if (userResponses.usage !== '') {draftToC += `
-  *[Usage](#usage)`};
+
+  # Installation : ${response.installation}
+
+  # Usage : ${response.usage}
+
+  # Contributors : ${response.contributors}
+
+  # Tests : ${response.tests}
+
+  # License : MIT
   
-  if (userResponses.contributing !== '') {draftToC += `
-  * [Contributing](#contributing)` };
+  # Questions?
+   Contact me with any questions: $response.username}.
 
-  if (userResponses.tests !== '') {draftToC += `
-  * [Tests](#tests)` };
-  
-let draftReadMe =
-`# ${userResponses.title}
-
-## Description
-  ${userResponses.description}
-  `
-  draftReadMe += draftToC;
-
-  draftReadMe +=`
-  *[License](license)`;
-  
-  if (userResponses.installation !== ''){
-
-    draftReadMe +=
-    
-    `
-
-  ## Installation 
-
-  ${userResponses.installation}`
-
-  };
-
-   if (userResponses.usage !== ''){
-
-    draftReadMe +=
-    
-    `
-
-  ## Usage
-
-  ${userResponses.usage}`
-
-  };
-  if (userResponses.contributing !== ''){
-
-    
-    `
-
-  ## Contributing 
-
-  ${userResponses.contributing}`
-
-  };
-  if (userResponses.tests !== ''){
-
-    draftReadMe +=
-    
-    `
-  ## Tests 
-
-  ${userResponses.tests}`
-
-  };
-
-  draftReadMe +=
-  `
-## License
-${userResponses.license}
-`;
-
-let draftDev =
-`
-
----
-  ## Questions?
-  ![Developer Profile Picture]($userInfo.avatar_url})
-
-  Contact me with any questions:
-
-  Github: [@${userInfo.login}]($userInfo.url})
-  `;
-  if (userInfo.email !==null){
-    draftDev +=
-`
-    Email: ${userInfo.email}
-    `};
-
-    draftReadMe += draftDev;
-
-    return ddraftReadMe;
-
-  }
+    `;
+   }
 
 module.exports = generateReadMe;
